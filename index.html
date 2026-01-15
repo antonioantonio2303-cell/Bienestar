@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bienestar Femenino</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header>
+<h1>Bienestar Femenino</h1>
+<p>Cuidar tu salud es un acto de amor propio</p>
+</header>
+
+
+<main>
+<h2>Registro de Salud</h2>
+<form id="formulario">
+<input type="text" id="nombre" placeholder="Nombre" required>
+<input type="text" id="apellidos" placeholder="Apellidos" required>
+<input type="number" id="edad" placeholder="Edad" required>
+<input type="number" step="any" id="peso" placeholder="Peso (kg)" required>
+<input type="number" step="any" id="talla" placeholder="Talla (m)" required>
+<input type="text" id="direccion" placeholder="Dirección" required>
+<button type="submit">Guardar</button>
+</form>
+<h2>Datos Guardados</h2>
+<table>
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Edad</th>
+<th>IMC</th>
+<th>Clasificación</th>
+<th>Acciones</th>
+</tr>
+</thead>
+<tbody id="tabla"></tbody>
+</table>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
